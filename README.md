@@ -29,3 +29,19 @@ Abra o arquivo `index.html` no navegador.
 - criação de histórias pelo jogador
 - sistema de save/load mais completo
 - versão para Android
+
+
+## Design
+
+A interface usa apenas CSS, então não depende de imagens externas.
+Isso deixa o projeto livre para você adicionar seus próprios personagens,
+fundos e CGs posteriormente.
+
+Para adicionar uma imagem de fundo, por exemplo, você poderá colocar uma
+imagem em `assets/backgrounds/` e depois usar `background-image` no CSS.
+
+### Pastas de imagens
+
+- `assets/characters/` → sprites dos personagens
+- `assets/backgrounds/` → cenários
+- `assets/music/` → músicas e efeitos
