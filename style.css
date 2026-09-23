@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: #241b2f;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    margin: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#start-screen,
+#ending-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(135deg, #241b2f, #6b426f);
+}
+
+#start-screen h1 {
+    font-size: 52px;
+}
+
+#start-button,
+#restart-button {
+    background: #e9a6d5;
+    color: #241b2f;
+    font-weight: bold;
+}
+
+#game-screen {
+    position: relative;
+}
+
+#scene {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #403653, #17131f);
+    padding: 20px;
+}
+
+#characters {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-placeholder {
+    width: 220px;
+    height: 320px;
+    border-radius: 110px 110px 30px 30px;
+    background: #d69bc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #241b2f;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+#dialogue-box {
+    width: min(1000px, 95%);
+    margin: auto;
+    padding: 22px;
+    border-radius: 18px;
+    background: rgba(20, 15, 28, 0.94);
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+#character-name {
+    color: #e9a6d5;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#dialogue-text {
+    min-height: 70px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+#choices {
+    margin-top: 12px;
+}
+
+.choice-button {
+    background: #8e6590;
+    color: white;
+    width: 100%;
+}
+
+#next-button {
+    background: #e9a6d5;
+    color: #241b2f;
+}
+
+#status {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #120f17;
+}
+
+@media (max-width: 700px) {
+    #start-screen h1 {
+        font-size: 38px;
+    }
+
+    #dialogue-text {
+        font-size: 16px;
+    }
+
+    .character-placeholder {
+        width: 160px;
+        height: 230px;
+    }
+}
